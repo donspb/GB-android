@@ -3,14 +3,14 @@ package Homework_01;
 
 public class Main {
 
-    public static void main(String[] args) {            // Çàäàíèå 1. Ñîçäàòü main
+    public static void main(String[] args) {            // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1. Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ 
 
         byte byteSample = 120;                          //
         short shortSample = 10000;                      //
         int intSample = 123456790;                      //
         long longSample = 496000489392L;                //
                                                         //
-        float floatSample = 36.6f;                      // Çàäàíèå 2. Äàííûå ðàçíûõ òèïîâ
+        float floatSample = 36.6f;                      // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 2. Ð”Ð°Ð½Ð½Ñ‹Ðµ
         double doubleSample = -70.01d;                  //
                                                         //
         char charSample = 'X';                          //
@@ -28,19 +28,20 @@ public class Main {
 
     }
 
-    public static int thirdPoint(int a, int b, int c, int d) {   // Çàäàíèå 3. Âû÷èñëåíèå âûðàæåíèÿ
+    public static int thirdPoint(int a, int b, int c, int d) {   // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 3. Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ
 
         return a*(b+(c/d));
 
     }
 
-    public static boolean fourthPoint(int a, int b) {             // Çàäàíèå 4. Ïðîâåðêà ñóììû ÷èñåë íà ïîïàäàíèå â äèàïàçîí
+    public static boolean fourthPoint(int a, int b) {             // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 4. ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÑƒÐ¼Ð¼Ñ‹ Ñ‡Ð¸ÑÐµÐ» Ð½Ð° Ð¿Ð¾Ð¿Ð°Ð´Ð°Ð½Ð¸Ðµ Ð² Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½
 
         return ((a + b) >= 10) && ((a + b) <= 20);
 
     }
 
-    public static void fifthPoint(int a) {                        // Çàäàíèå 5. ×èñëî íàîáîðîò
+    public static void fifthPoint(int a) {                        // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 5. Ð§Ð¸ÑÐ»Ð¾ Ð½Ð°Ð¾Ð±Ð¾Ñ€Ð¾Ñ‚
+
         if (a > 100 && a <= 999) {
             System.out.print((a%100)%10);
             System.out.print((a%100)/10);
@@ -48,8 +49,9 @@ public class Main {
         }
     }
 
-    public static void sixthPoint(int year) {              // Çàäàíèå 6. Âèñîêîñíûé ãîä
-        if ((year % 4 != 0) || ((year % 100 == 0) && (year % 400 != 0))) System.out.println( year + " ãîä - íå âèñîêîñíûé");
-        else System.out.println(year + " ãîä - âèñîêîñíûé");
+    public static void sixthPoint(int year) {              // Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 6. Ð’Ð¸ÑÐ¾ÐºÐ¾ÑÐ½Ñ‹Ð¹ Ð³Ð¾Ð´
+
+        if ((year % 4 != 0) || ((year % 100 == 0) && (year % 400 != 0))) System.out.println( year + " Ã£Ã®Ã¤ - Ã­Ã¥ Ã¢Ã¨Ã±Ã®ÃªÃ®Ã±Ã­Ã»Ã©");
+        else System.out.println(year + " Ã£Ã®Ã¤ - Ã¢Ã¨Ã±Ã®ÃªÃ®Ã±Ã­Ã»Ã©");
     }
 }
